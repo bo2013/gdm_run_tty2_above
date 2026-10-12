@@ -1,4 +1,7 @@
 {
     "name": "Arch linux",
-    "image": "archlinux"
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "containerUser": "builder"
 }
