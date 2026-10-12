@@ -1,7 +1,7 @@
 FROM archlinux:base-devel
 
 RUN pacman -Syu --noconfirm && \
-    pacman -S --needed --noconfirm sudo git openssh secure-delete && \
+    pacman -S --needed --noconfirm sudo git && \
     pacman -Scc --noconfirm
 
 RUN useradd -m -s /bin/bash builder && \
